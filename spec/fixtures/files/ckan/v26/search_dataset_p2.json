@@ -1,4 +1,6 @@
 {
-    "count": 5,
-    "results": [ ]
+    "result": {
+        "count": 5,
+        "results": [ ]
+    }
 }

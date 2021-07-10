@@ -7,8 +7,8 @@ class AddQualityScores < ActiveRecord::Migration[5.1]
       t.integer :average, default: 0
       t.integer :median, default: 0
       t.integer :total, default: 0
-      t.string :organisation_name, :string
-      t.string :organisation_title, :string
+      t.string :organisation_name
+      t.string :organisation_title
       t.timestamps
     end
   end

@@ -1,30 +1,32 @@
 {
-    "count": 5,
-    "results": [
-        {
-            "id": "7509bbb5-ce6a-4801-8d77-b72c58d46180",
-            "organization": "aberdeen-city-council",
-            "metadata_modified": "2018-03-18T09:03:05.821Z"
-        },
-        {
-            "id": "fa37dff7-bbc0-4a84-a146-7eee332c9c1f",
-            "organization": "aberdeen-city-council",
-            "metadata_modified": "2017-06-23T16:34:35.694Z"
-        },
-        {
-            "id": "bca22660-dccc-4a37-9cfe-6bc2c0739cff",
-            "organization": "aberdeen-city-council",
-            "metadata_modified": "2018-05-02T19:27:59.746Z"
-        },
-        {
-            "id": "5f6e6b90-e83b-4998-8682-e427ddc7493a",
-            "organization": "aberdeen-city-council",
-            "metadata_modified": "2018-01-01T00:00:01.000Z"
-        },
-        {
-            "id": "b09659af-2d8f-4dd4-9e50-453160a6b1d6",
-            "organization": "test-publisher",
-            "metadata_modified": "2020-03-26T00:00:01.000Z"
-        }
-    ]
+    "result": {
+        "count": 5,
+        "results": [
+            {
+                "id": "7509bbb5-ce6a-4801-8d77-b72c58d46180",
+                "organization": "aberdeen-city-council",
+                "metadata_modified": "2018-03-18T09:03:05.821Z"
+            },
+            {
+                "id": "fa37dff7-bbc0-4a84-a146-7eee332c9c1f",
+                "organization": "aberdeen-city-council",
+                "metadata_modified": "2017-06-23T16:34:35.694Z"
+            },
+            {
+                "id": "bca22660-dccc-4a37-9cfe-6bc2c0739cff",
+                "organization": "aberdeen-city-council",
+                "metadata_modified": "2018-05-02T19:27:59.746Z"
+            },
+            {
+                "id": "5f6e6b90-e83b-4998-8682-e427ddc7493a",
+                "organization": "aberdeen-city-council",
+                "metadata_modified": "2018-01-01T00:00:01.000Z"
+            },
+            {
+                "id": "b09659af-2d8f-4dd4-9e50-453160a6b1d6",
+                "organization": "test-publisher",
+                "metadata_modified": "2020-03-26T00:00:01.000Z"
+            }
+        ]
+    }
 }

@@ -11,7 +11,8 @@ development:
   
 integration:
   <<: *default
-  host: <%= ENV["BONSAI_URL"] %>
+  host: <%= ENV["ES_HOST"] %>
+  vcap_services: '<%= ENV["VCAP_SERVICES"] %>'
 
 staging:
   <<: *default

@@ -21,8 +21,9 @@ module CKAN
 
           raw_response = url.read
           response = JSON.parse(raw_response)
-          page = response.fetch("results")
-          total_expected = response.fetch("count")
+          result = response.fetch("result")
+          page = result.fetch("results")
+          total_expected = result.fetch("count")
           total_expected_from_first_response ||= total_expected
 
           if total_expected != total_expected_from_first_response

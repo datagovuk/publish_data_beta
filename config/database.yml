@@ -12,9 +12,6 @@ test:
   <<: *default
   database: publish_data_beta_test
 
-integration:
-  <<: *default
-
 production: &production
   <<: *default
   database: publish_data_beta_production
@@ -22,4 +19,7 @@ production: &production
   password: <%= ENV['PUBLISH_DATA_BETA_DATABASE_PASSWORD'] %>
 
 staging:
+  <<: *production
+
+integration:
   <<: *production

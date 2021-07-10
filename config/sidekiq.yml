@@ -16,6 +16,15 @@ development:
       class: CKAN::V26::CKANOrgSyncWorker
       cron: '*/10 * * * *'
 
+integration:
+  :schedule:
+    ckan_v26_package_sync:
+      class: CKAN::V26::PackageSyncWorker
+      cron: '*/10 * * * *'
+    ckan_v26_ckan_org_sync:
+      class: CKAN::V26::CKANOrgSyncWorker
+      cron: '0 0 * * *'
+
 staging:
   :schedule:
     ckan_v26_package_sync:

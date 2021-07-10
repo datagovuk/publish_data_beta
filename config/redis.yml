@@ -13,6 +13,11 @@ test:
   host: localhost
   port: 6379
 
+integration:
+  <<: *default
+  url: '<%= JSON.parse(ENV["VCAP_SERVICES"] || "{}")
+                .dig("redis", 0, "credentials", "uri") %>'
+
 staging:
   <<: *default
   url: '<%= JSON.parse(ENV["VCAP_SERVICES"] || "{}")

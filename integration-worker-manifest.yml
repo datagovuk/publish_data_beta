@@ -1,0 +1,16 @@
+applications:
+- name: publish-beta-integration-worker
+  memory: 1G
+  buildpack: https://github.com/cloudfoundry/ruby-buildpack.git#v1.8.17
+  stack: cflinuxfs3
+  command: bundle exec rake db:migrate db:seed && bundle exec sidekiq
+  env:
+    RAILS_ENV: integration
+    RACK_ENV: integration
+  services:
+  - publish-integration-secrets
+  - publish-beta-integration-pg-12
+  - publish-beta-integration-redis
+  - logit-ssl-drain
+  - elasticsearch-7-integration
+  health-check-type: process
